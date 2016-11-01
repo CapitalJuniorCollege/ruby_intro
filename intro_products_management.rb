@@ -1,4 +1,4 @@
-products = ["Negan",
+@products = ["Negan",
   "Glen Eating Pizza",
   "Glen eye out of his head",
   "Abraham",
@@ -15,16 +15,16 @@ products = ["Negan",
 ]
 
 # { {cost: 3123, color: "red"},{},{} }
-products_characteristics = {}
-products.each_with_index do | p , i |
-  products_characteristics[p] = {
+@products_characteristics = {}
+@products.each_with_index do | p , i |
+@products_characteristics[p] = {
     cost: 10,
     color: "undefined",
     index_product: i
   }
 end
-shopping_car = {}
-user_character = nil
+@shopping_car = {}
+@user_character = nil
 while user_character != "exit"
   puts "Costume Store #########################"
   puts '#######################################'
